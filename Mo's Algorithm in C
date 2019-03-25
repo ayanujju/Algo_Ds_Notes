@@ -1,7 +1,4 @@
-/*
-Author: Ayan Raj
-C Program to Add Two Matrices using Multi-dimensional Arrays
-*/
+/* C Program to Add Two Matrices using Multi-dimensional Arrays */
 
 
 #include <stdio.h>
@@ -77,11 +74,84 @@ Sum of two matrix is:
 7   -3
 */
 
+/* C Program to Subtract Two Matrices using Multi-dimensional Arrays */
+
+
+#include <stdio.h>
+
+int main()
+{
+    int r, c, a[100][100], b[100][100], diff[100][100], i, j;
+
+    printf("Enter number of rows (between 1 and 100): ");
+    scanf("%d:,&r);
+
+    printf("Enter number of columns (between 1 and 100): ");
+    scanf("%d:,&c);
+
+    printf("\n "Enter elements of 1st matrix: \n");
+  
+    // Storing elements of first matrix entered by user
+    
+    for(i = 0; i < r; ++i)
+       for(j = 0; j < c; ++j)
+       {
+           printf("Enter element a%d%d:",i+1,j+1);
+	   scanf("%d",&a[i][j]);
+       }
+
+    // Storing elements of second matrix entered by user
+    
+    printf("\n "Enter elements of 2nd matrix: \n");
+    for(i = 0; i < r; ++i)
+       for(j = 0; j < c; ++j)
+       {
+           printf("Enter element b%d%d:",i+1,j+1);
+	   scanf("%d",&b[i][j]);
+       }
+
+    // Subtracting Two matrices
+    
+    for(i = 0; i < r; ++i)
+        for(j = 0; j < c; ++j)
+            diff[i][j] = a[i][j] - b[i][j];
+
+    // Displaying the resultant sum matrix
+    
+    printf("\nDifference of two matrix is: \n");
+    
+    for(i = 0; i < r; ++i)
+        for(j = 0; j < c; ++j)
+        {
+	    printf("%d ",sum[i][j]);
+            if(j == c - 1)
+                printf("\n");
+        }
+
+    return 0;
+}
+
 
 /*
-Author:Ayan Raj
-C Program to compute determinant of a Matrix
+Enter number of rows (between 1 and 100): 2
+Enter number of columns (between 1 and 100): 2
+Enter elements of 1st matrix:
+Enter element a11: 4
+Enter element a12: 9
+Enter element a21: 6
+Enter element a22: 8
+Enter elements of 2nd matrix:
+Enter element b11: 3
+Enter element b12: 5
+Enter element b21: 4
+Enter element b22: 2
+Difference of two matrix is:
+1   4
+2  6
 */
+
+
+/* C Program to compute determinant of a Matrix */
 
 #include <stdio.h>
 
@@ -180,24 +250,9 @@ Determinant of the matrix is : 30
 */
 
 
-/*
-Author: Ayan Raj
-C Program to find mirror of matrix across diagonal
-Input : mat[][] = {{1  2  3  4 }
-                   {5  6  7  8 }
-                   {9  10 11 12}
-                   {13 14 15 16} }
-Output : 1 5 9 13 
-         2 6 10 14  
-         3 7 11 15 
-         4 8 12 16
-*/
 
 
-/*
-Author: Ayan Raj
-C program to multiply two square matrices.
-*/
+/* C program to multiply two square matrices */
 
 #include <stdio.h>  
 
@@ -263,10 +318,9 @@ Result matrix is
 40 40 40 40 
 */
 
-/*
-Author: Ayan Raj
-C program to find the scalar product of a matrix 
-*/
+
+
+/* C program to find the scalar product of a matrix  */
 
 #include <stdio.h> 
 
@@ -311,10 +365,9 @@ Scalar Product Matrix is :
 28 32 36
 */
 
-/*
-Author: Ayan Raj
-C Program to sort a matrix
-*/
+
+
+/* C Program to sort a matrix */
 
 
 
